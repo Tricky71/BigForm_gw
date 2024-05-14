@@ -1,0 +1,40 @@
+#bigformat .portfolio__cards-item-image {
+  width: 580px;
+  height: 329px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat center/cover url(../img/prev-bg-2.png), #f3f3f3;
+    &:hover {
+      & .preview-bf__image {
+        opacity: 0;
+        margin-left: auto;
+      }
+      & .preview-bf__logo {
+        position: absolute;
+        width: 100%;
+      }
+    }
+}
+
+#bigformat .img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+#bigformat .preview-bf {
+  position: relative;
+  width: 69%;
+  display: flex;
+  align-items: center;
+}
+
+#bigformat .preview-bf__logo {
+  width: 60%;
+  transition: all .5s ease;
+}
+
+#bigformat .preview-bf__image {
+  width: 40%;
+  transition: all .5s ease;
+}

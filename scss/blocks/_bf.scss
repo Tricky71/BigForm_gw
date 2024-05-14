@@ -38,6 +38,15 @@
     }
 }
 
+.bf-anim-wrap {
+  position: absolute;
+  top: 9%;
+  left: 5%;
+  right: 7%;
+  bottom: 8.4%;
+  overflow: hidden;
+}
+
 @media(min-width: $tablet-width) {
   .bf-container {
     padding: 0;

@@ -26,6 +26,10 @@
   }
 }
 
+.pages__tab {
+  position: relative;
+}
+
 .pages__slider-list {
   @include reset-list; 
 }
@@ -64,8 +68,10 @@
     }
   }
 
-  .marque {
-    animation: none;
+  .pages__desk-image {
+    &.marque {
+      animation: none;
+    }
   }
 }
 

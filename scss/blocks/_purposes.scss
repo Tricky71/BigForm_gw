@@ -10,6 +10,10 @@
   margin-bottom: 10px;
 }
 
+.purposes__image--tab {
+  position: relative;
+}
+
 @media(min-width: $tablet-width) {
   .purposes {
     padding-top: 3.13vw;
@@ -27,14 +31,25 @@
   .purposes__images-wrapper {
     display: flex;
     align-items: center;
-      & img {
-        &:nth-child(1) {
-          width: 32.81vw;
-          height: 36.55vw;
-        }
-        &:nth-child(2) {
-          width: 49.9vw;
-        }
-      }
+      // & img {
+      //   &:nth-child(1) {
+      //     width: 32.81vw;
+      //     height: 36.55vw;
+      //   }
+      //   &:nth-child(2) {
+      //     width: 49.9vw;
+      //   }
+      // }
+  }
+
+  .purposes__image {
+    &--mob {
+      width: 32.81vw;
+      height: 36.55vw;
+    }
+    &--tab {
+       width: 49.9vw;
+      // height: 36.55vw;
+    }
   }
 }
