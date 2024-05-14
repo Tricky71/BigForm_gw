@@ -1,0 +1,37 @@
+.task {
+  padding: 30px 0;
+  background: linear-gradient(12.5deg, #fff 52%, #f3f3f3 52%);
+}
+
+.task__content {
+  margin-bottom: 20px;
+}
+
+.task__title {
+  margin-bottom: 10px;
+}
+
+@media(min-width: $tablet-width) {
+  .task {
+    padding-top: 0;
+    padding-bottom: 5.31vw;
+  }
+
+  .task__content {
+    margin-bottom: 0;
+    width: 35.83vw;
+  }
+
+  .task__image {
+    width: 32.81vw;
+  }
+
+  .task__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .task__title {
+    margin-bottom: 1.25vw;
+  }
+}

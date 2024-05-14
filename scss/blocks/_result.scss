@@ -1,0 +1,31 @@
+.result {
+  padding: 30px 0;
+  background-color: #f3f3f3;
+}
+
+.result__title {
+  margin-bottom: 10px;
+}
+
+.result__text {
+  margin-bottom: 10px;
+}
+
+@media(min-width: $tablet-width) {
+  .result {
+    padding: 12.86vw 0 14vw;
+    background: no-repeat center/cover url(../img/result-bg-1.png), #f3f3f3;
+  }
+
+  .result__wrapper {
+    width: 41.4vw;
+  }
+
+  .result__title {
+    margin-bottom: 1.25vw;
+  }
+
+  .result__text {
+    margin-bottom: 1vw;
+  }
+}

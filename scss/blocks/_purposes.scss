@@ -1,0 +1,40 @@
+.purposes {
+  padding: 30px 0;
+  background-image: url(../img/purposes-bg.png), linear-gradient(-10deg, #f3f3f3 19%, #fff 19%);;
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.purposes__title {
+  margin-bottom: 10px;
+}
+
+@media(min-width: $tablet-width) {
+  .purposes {
+    padding-top: 3.13vw;
+    padding-bottom: 14.43vw;
+  }
+
+  .purposes__content {
+    margin-bottom: 3.28vw;
+  }
+
+  .purposes__title {
+    margin-bottom: 1.25vw;
+  }
+
+  .purposes__images-wrapper {
+    display: flex;
+    align-items: center;
+      & img {
+        &:nth-child(1) {
+          width: 32.81vw;
+          height: 36.55vw;
+        }
+        &:nth-child(2) {
+          width: 49.9vw;
+        }
+      }
+  }
+}

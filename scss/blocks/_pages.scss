@@ -1,0 +1,142 @@
+.pages {
+  padding: 30px 0;
+  background-color: #f3f3f3;
+}
+
+.pages__title {
+  margin-bottom: 10px;
+}
+
+.pages__block {
+  &--1 {
+    margin-bottom: 20px;
+      & .pages__desk {
+        margin-bottom: 30px;
+        height: 500px;
+        overflow: hidden;
+      }
+  }
+  &--2 {
+    & .pages__mob {
+      margin-bottom: 20px;
+    }
+  }
+  &--3 {
+    margin-bottom: 20px;
+  }
+}
+
+.pages__slider-list {
+  @include reset-list; 
+}
+
+.marque {
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% - 20px));
+  }
+}
+
+@media(min-width: $mobile-width) {
+  .pages__block {
+    &--1 {
+      margin-bottom: 0;
+        & .pages__wrapper {
+          display: flex;
+        }
+        & .pages__desk {
+          width: 54vw;
+          height: auto;
+        }
+        & .pages__desk-image--add {
+          display: none;
+        }
+        & .pages__slider {
+          width: 34vw;
+          
+        }
+    }
+  }
+
+  .marque {
+    animation: none;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .pages {
+    padding: 0;
+    background: no-repeat 0 55.1%/contain url(../img/pages-bg-1.png), no-repeat 0 70.3%/contain url(../img/pages-bg-2.png), #f3f3f3;
+  }
+  .pages__block {
+    &--1 {
+      .pages__title {
+        margin-bottom: 1.25vw;
+      }
+      & .pages__desk {
+        width: 47.34vw;
+      }
+      & .pages__slider {
+        width: 24.53vw;
+        height: 98.54vw;
+        margin-top: 13.44vw;
+      }
+      & .swiper {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+    &--2 {
+      display: flex;
+      align-items: center;
+      margin-top: -14vw;
+      margin-bottom: 14.11vw;
+        & .pages__mob {
+          width: 32.81vw;
+          margin-top: 13vw;
+        }
+        & .pages__desk {
+          width: 56.34vw;
+        }
+    }
+    &--3 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 9vw;
+        & .pages__tab {
+          width: 50.52vw;
+          position: absolute;
+          top: 0;
+          left: 6vw;
+        }
+        & .pages__mob {
+          width: 32.81vw;
+          margin-left: auto;
+          margin-top: 2.6vw;
+        }
+    }
+    &--4 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+        & .pages__desk {
+          width: 34.9vw;
+            &--1 {
+              margin-top: 11.15vw;
+              margin-bottom: 6.25vw;
+            }
+            &--4 {
+              margin-top: -18.5vw;
+            }
+        }
+    }
+  }
+}

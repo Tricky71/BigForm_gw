@@ -1,0 +1,39 @@
+.color {
+  background-color: #f3f3f3;
+}
+
+.color__title {
+  margin-bottom: 10px;
+}
+
+@media(min-width: $mobile-width) {
+  .color__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .color__image {
+    width: 75%;
+    margin-right: 30px;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .color__image {
+    width: 22.4vw;
+    margin-right: 30px;
+  }
+
+  .color__content {
+    width: 37.76vw;
+  }
+
+  .color__title {
+    margin-bottom: 2.19vw;
+  }
+
+  .color__footer {
+    padding-top: 2.5vw;
+  }
+}

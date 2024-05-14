@@ -1,0 +1,30 @@
+.promo {
+  padding-bottom: 20px;
+  padding-top: 28px;
+  background-color: #f3f3f3f3;
+}
+
+@media(min-width: $mobile-width) {
+  .promo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .promo {
+    background: linear-gradient(5deg, #f3f3f3 63%, #fff 63%);
+  }
+  .promo__wrapper {
+    padding-right: 6.35vw;
+  }
+
+  .promo__logo {
+    width: 23.54vw;
+  }
+
+  .promo__image {
+    width: 19.74vw;
+  }
+}

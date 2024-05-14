@@ -1,0 +1,103 @@
+.bf-container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.bf-title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: $accent;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bf-text {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.bf-link {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: $accent;
+}
+
+.bf-list {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.bf-item {
+  margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+}
+
+@media(min-width: $tablet-width) {
+  .bf-container {
+    padding: 0;
+      &--promo {
+        width: 63vw;
+      }
+      &--about {
+        width: 62.81vw;
+        padding-right: 1.26vw;
+      }
+      &--services {
+        width: 73.33vw;
+        padding-right: 2.14vw;
+      }
+      &--task {
+        width: 68.23vw;
+        padding-left: 1.35vw;
+      }
+      &--purposes-1 {
+        width: 68.33vw;
+        padding-left: 1.51vw;
+      }
+      &--purposes-2 {
+        width: 87.9vw;
+        padding-right: 6.15vw;
+      }
+      &--color {
+        width: 68.8vw;
+      }
+      &--pages-1 {
+        width: 75.52vw;
+      }
+      &--pages-2 {
+        width: 84.38vw;
+      }
+      &--pages-3 {
+        width: 74.48vw;
+      }
+      &--result {
+        width: 63.02vw;
+      }
+  }
+  .bf-title {
+    font-size: 1.7vw;
+  }
+
+  .bf-text {
+    font-size: 1.7vw;
+  }
+
+  .bf-link {
+    font-size: 1.7vw;
+  }
+
+  .bf-list {
+    padding-left: 1.7vw;
+    font-size: 1.7vw;
+  }
+
+  .bf-item {
+    margin-bottom: 1.67vw;
+  }
+}

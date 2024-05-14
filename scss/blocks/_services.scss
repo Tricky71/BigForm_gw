@@ -1,0 +1,33 @@
+.services {
+  padding: 30px 0;
+  background: url(../img/services-bg-2.png),linear-gradient(-5deg, #f3f3f3 63%, #fff 63%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services__list {
+  @include reset-list;
+}
+
+@media(min-width: $mobile-width) {
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services__item {
+    width: 50%;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .services {
+    padding-top: 10.15vw;
+    padding-bottom: 8.85vw;
+  }
+  .services__item {
+    width: 16.14vw;
+  }
+}
